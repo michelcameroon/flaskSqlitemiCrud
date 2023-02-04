@@ -1,0 +1,36 @@
+<html>
+<body>
+<h1> index </h1>
+
+<h2> list entries </h2>
+
+       {% for entri in entries %}
+
+          <tr><td>
+#           <form action='courseUpdate' method='POST' >
+           <form action='' method='POST' >
+           <input type='text' name='name' value={{entries.title}} />
+
+           {{entri}}
+
+           </td>
+          <td>
+          <input type='submit' value=' update' />
+
+          </td><td>
+
+          <input type='submit' value=' delete' />
+
+          </form>
+
+
+         </td></tr>
+
+       {% endfor %}
+
+
+</body>
+</html>
+
+
+
